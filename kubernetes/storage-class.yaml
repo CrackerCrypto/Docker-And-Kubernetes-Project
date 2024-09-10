@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: StorageClass
+metadata:
+  name: manual
+  namespace: my-app
+provisioner: k8s.io/minikube-hostpath
+reclaimPolciy: Retain
+volumeBindingMode: Immediate
