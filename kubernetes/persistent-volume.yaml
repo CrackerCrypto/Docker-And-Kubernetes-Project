@@ -6,7 +6,6 @@ metadata:
   labels:
     app: mongo-pv
 spec:
-  storageClassName: manual
   capacity:
     storage: 1Gi
   accessModes:
@@ -23,7 +22,6 @@ metadata:
 spec:
   accessModes:
     - ReadWriteOnce
-  storageClassName: manual
   resources:
     requests:
       storage: 1Gi
