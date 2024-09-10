@@ -3,6 +3,6 @@ kind: StorageClass
 metadata:
   name: manual
   namespace: my-app
-provisioner: k8s.io/minikube-hostpath
+provisioner: k8s.io/no-provisioner
 reclaimPolciy: Retain
-volumeBindingMode: Immediate
+volumeBindingMode: WaitForFirstConsumer  
